@@ -64,7 +64,7 @@
 						</div>
 						<div class="card-body" style="clear: both;">
 							<div class="row">
-								<div class="col-lg-4">
+								<div class="col-lg-6">
 									<table class="table table-bordered"  style="text-align: center;">
 										<tr>
 											<th colspan="2">결재 진행</th>
@@ -78,7 +78,7 @@
 											</td>
 										</tr>
 										<tr>
-											<th>결재 완료 문서</th>
+											<th>승인 문서</th>
 											<td class="aplist">
 												<input type="hidden" class="tag" value="approved">
 												<input type="hidden" class="map" value="${map['approved']}">
@@ -103,7 +103,7 @@
 										</tr>
 									</table>
 								</div>
-								<div class="col-lg-8">
+								<div class="col-lg-6">
 									<table class="table table-bordered"  style="text-align: center;">
 										<tr>
 											<th colspan="2">개인 문서함</th>
@@ -124,7 +124,7 @@
 											</td>
 										</tr>
 										<tr>	
-											<th>결재 완료 문서</th>
+											<th>종결 문서</th>
 											<td class="aplist">
 												<input type="hidden" class="tag" value="myFinAp">
 												<input type="hidden" class="map" value="${map['myFinAp']}">
@@ -174,17 +174,17 @@
 												}else if(tag=='myFinAp'){
 													$caption.text("● 기안문서 > 종결 문서");
 												}else if(tag=='myRejectedDraft'){
-													$caption.text("● 기안문서 > 중지(반려)문서");
+													$caption.text("● 기안문서 > 반려 문서");
 												}else if(tag=='draft'){
-													$caption.text("● 결재문서 > 결재문서");
+													$caption.text("● 결재문서 > 미결재 문서");
 												}else if(tag=='approved'){
-													$caption.text("● 결재문서 > 결재완료");
+													$caption.text("● 결재문서 > 승인 문서");
 												}else if(tag=='rejected'){
-													$caption.text("● 결재문서 > 중단문서");
+													$caption.text("● 결재문서 > 반려 문서");
 												}else if(tag=='fin'){
-													$caption.text("● 결재문서 > 종결문서");
+													$caption.text("● 결재문서 > 종결 문서");
 												}else if(tag=='ref'){
-													$caption.text("● 결재문서 > 참조문서");
+													$caption.text("● 결재문서 > 참조 문서");
 												}
 												
 												

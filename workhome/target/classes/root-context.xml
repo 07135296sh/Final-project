@@ -16,7 +16,7 @@
 	<!-- <property name="password" value="workhome" /> -->
 	<!-- </bean> -->
 
-	<!-- ec2 Dababase -->
+	<!-- ec2 Database -->
 	<bean id="dataSource"
 		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName"
@@ -49,7 +49,7 @@
 		<property name="host" value="smtp.gmail.com" />
 		<property name="port" value="587" />
 		<property name="username" value="workhome0215@gmail.com" />
-		<property name="password" value="jeldsuxigeefjoys" />
+		<property name="password" value="yazauovsazxtchfh" />
 		<property name="javaMailProperties">
 			<props>
 				<prop key="mail.transport.protocol">smtp</prop>

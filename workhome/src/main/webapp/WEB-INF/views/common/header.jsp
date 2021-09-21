@@ -170,7 +170,7 @@
 					$div1.append($div1_1);
 					$div2_1.html(data[i].CREATEDATE);
 					$div2.append($div2_1);
-					$span.text(decodeURIComponent(data[i].ACONTENTS.replaceAll('+', ' ')));
+					$span.html(decodeURIComponent(data[i].ACONTENTS.replaceAll('+', ' '))+'&nbsp; &nbsp; &nbsp;');
 					$div2.append($span);
 					
 					$a.append($input1);
